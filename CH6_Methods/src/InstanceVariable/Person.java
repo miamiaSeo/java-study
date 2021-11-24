@@ -1,0 +1,12 @@
+package InstanceVariable;
+
+public class Person {
+
+		// 클래스 안의 일반 변수 => 인스턴스 변수 (객체 생성시 생성 됨)
+		String name;
+		int age;
+		
+
+	}
+
+

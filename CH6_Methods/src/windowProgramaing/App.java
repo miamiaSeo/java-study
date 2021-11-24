@@ -1,0 +1,25 @@
+package windowProgramaing;
+
+public class App {
+
+	public static void main(String[] args) {
+		// 윈도우 객체를 생성
+		// set 메소드로 값을 입력하고 get메소드로 값을 출력하라
+		// 설정 윈도우창의 가로 300 세로 600
+		//현재 보이도록 true, top 200, left 400
+		Window window = new Window();
+	
+		window.setWidth(300);
+		window.setHeight(600);
+		window.setIsvisible(true);
+		window.setTop(200);
+		window.setLeft(400);
+		
+		System.out.println("가로길이 : " + window.getWidth());
+		System.out.println(window.getHeight());
+		System.out.println(window.getIsvisible());
+		System.out.println(window.getTop());
+		System.out.println(window.getLeft());
+	}
+
+}
