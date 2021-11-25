@@ -46,7 +46,7 @@ public class Randomword {
 			sb.append(' ');
 //			text += ' '; // 철자를 한 칸씩 스페이스바
 		}
-		System.out.println(selectWord); // 정답출력(테스트용)
+//		System.out.println(selectWord); // 정답출력(테스트용)
 		return sb.toString(); // 선택 된 랜덤 단어를 가져옴
 	}
 	
@@ -57,5 +57,14 @@ public class Randomword {
 				characters[i] = c; 
 			}
 		}
+	}
+	public boolean isCompleted() {
+		// 철자를 다 맞혔는지 체크해서 true or false로 리턴
+		for (char c : characters) { // 단어 전체 철자 반복 검사
+			if(c=='\u0000') {
+				return false; //아직 맞혀야 할 문자가 있음
+			}
+		}	
+		return true; // 다 맞혔음 
 	}
 }
